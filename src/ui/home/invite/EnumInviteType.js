@@ -1,0 +1,5 @@
+export const INVITE_TYPE = {
+  ADMIN: "ADMIN",
+  DOOR_TEAM: "DOOR_TEAM",
+  PROMOTOR: "PROMOTOR",
+};
