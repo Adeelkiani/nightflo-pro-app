@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Nightflo Pro",
+    "slug": "nightflopro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "hooks": {
+      "postPublish": []
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NightfloPro requires to access your photos in order to set your profile picture & set an event banner picture."
+        }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow NightfloPro to access camera for scanning QR codes."
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1e2234"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nighflo.pro",
+      "buildNumber": "1",
+      "userInterfaceStyle": "light",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow NightfloPro to access camera for scanning QR codes.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "android": {
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/ic_launcher_foreground.png",
+        "backgroundColor": "#241D39"
+      },
+      "userInterfaceStyle": "light",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.nighflo.pro"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "55d6dd91-60b0-4bb7-a9d1-2f25c3c2343c"
+      }
+    },
+    "owner": "work7"
+  }
+}
